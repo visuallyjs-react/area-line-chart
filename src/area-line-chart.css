@@ -1,0 +1,66 @@
+
+:root {
+    --vjs-chart-text-main: #111827;      /* Gray 900 */
+    --vjs-chart-text-muted: #4B5563;    /* Gray 600 */
+    --vjs-chart-bg-main: #F9FAFB;       /* Gray 50 */
+    --vjs-chart-border-color: #E5E7EB;  /* Gray 200 */
+    --vjs-chart-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --vjs-chart-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.vjs-chart-example-container {
+    height: 500px;
+    background-color: white;
+}
+
+.vjs-chart-header {
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid var(--vjs-chart-border-color);
+}
+
+.vjs-chart-header button {
+    margin-left:auto;
+    margin-right:0.5rem;
+}
+
+.vjs-area-line-chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--vjs-chart-bg-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.vjs-chart-example-comments {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--vjs-chart-text-muted);
+    border-top: 1px solid var(--vjs-chart-border-color);
+    background-color: #ffffff;
+}
+
+.vjs-chart-example-title {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.125rem;
+    padding: 1.25rem 1.5rem;
+    background-color: #ffffff;
+    color: var(--vjs-chart-text-main);
+}
+
+.vjs-chart-example {
+    margin: 0;
+    background-color: white;
+    border: 1px solid var(--vjs-chart-border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--vjs-chart-shadow-sm);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.vjs-chart-example:hover {
+    box-shadow: var(--vjs-chart-shadow-md);
+}
